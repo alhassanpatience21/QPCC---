@@ -3,13 +3,15 @@
 @section('title', 'Login')
 
 @section('content')
-<div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(https://images.unsplash.com/photo-1590142419789-e7c4d8b0e565?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80) no-repeat center center; background-size: cover;">
+<div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url({{ asset('images/login-bg.jpg')}}) no-repeat center center; background-size: cover;">
     <div class="auth-box p-4 bg-white rounded">
         <div id="loginform">
             <div class="logo text-center">
-                <h2 class="box-title mb-3"><b>Dougy Star Ventures</b></h2>
-                <h2 class="box-title mb-3"><b>Sign In</b></h2>
+                <img src="{{ asset('images/credit-union.png')}}" height="100px" alt="" srcset="">
+                <h3 class="box-title">Queen of Peace Co-Operative Credit Union</h6>
+                <h4 class="">Sign In</h4>
             </div>
+            <!-- Form -->
             <div class="row">
                 <div class="col-12">
                     <form class="form-horizontal mt-3 form-material" method="POST" action="{{ route('login') }}">
